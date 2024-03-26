@@ -16,20 +16,19 @@ End the program
 
 ## Program:
 ```
-Developed by: A.MERCY
-Register No: 212223110027
-def gcd():
-    a=int(input())
-    b=int(input())
-    while b!=0:
-        a,b=b,a%b
-    print("GCD of two numbers is:",a)
+#Program to find the eigen values and eigen vectors.
+#Developed by: MERCY A
+#RegisterNumber: 212223110027
+
+import numpy as np
+a=np.array([[-2,2,-3],[2,1,-6],[-1,-2,0]])
+b,c=np.linalg.eig(a)
+print("Eigen values are {} and Eigen Vectors are {}".format(b,c))
 
 ```
 ## Output:
 
-![Screenshot 2024-03-26 173441](https://github.com/mercyarulappan/EIGENVALUES-AND-EIGENVECTORS/assets/149233730/2fdf7026-a645-4e0c-b52c-55dbf801fb86)
-
+![Screenshot 2024-03-26 173855](https://github.com/mercyarulappan/EIGENVALUES-AND-EIGENVECTORS/assets/149233730/dd91be12-3e37-4eb2-b3ef-edd06dc63a9b)
 
 ## Result:
 Thus the Eigenvalue and Eigenvector is successfully solved using python program
